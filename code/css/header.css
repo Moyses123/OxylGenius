@@ -1,0 +1,11 @@
+#header-template {}
+
+#header-template .mdl-layout__drawer-button{
+    color: #424242;
+}
+
+@media all and (min-width: 1025px){
+    #header-template .mdl-layout__drawer-button{
+        display: none;
+    }
+}
