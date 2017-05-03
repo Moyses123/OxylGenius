@@ -1,18 +1,11 @@
-section#login-page{
+.obfuscator{
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #e2e2e2;
-}
-
-section#login-page .mdl-card{
-    margin: 0 auto;
-}
-
-section#login-page .mdl-card label{
-    color: rgb(63,81,181);
+    height: 100%;
+    position: fixed;
+    z-index: 9;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
 }
 
 .ripple{
@@ -32,6 +25,10 @@ section#login-page .mdl-card label{
 .fadeInRipple{
     animation: fadeInRipple 0.4s 0s 1 linear alternate;
 }
+
+.zoomIn{
+    animation: zoomIn 0.1s 0s 1 linear alternate;
+}
 @keyframes fadeInRipple {
   0% {
     opacity: 0;
@@ -49,3 +46,32 @@ section#login-page .mdl-card label{
     border-radius: 0;
   }
 }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+.loading-clock {
+  -webkit-animation: rotate 2000ms linear infinite both;
+  animation: rotate 2000ms linear infinite both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

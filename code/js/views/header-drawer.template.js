@@ -1,8 +1,3 @@
-Vue.component('spinner', {
-    template: `
-<div class="loading-clock" style="border-radius: 50px;display: block;margin: 0 auto;width: 30px;height: 30px;border: 3px solid rgba(255, 255,255, 0.2);border-top: 3px solid white;"></div>
-    `
-});
 Vue.component('header-drawer-template', {
     template: `
 <div>
@@ -74,24 +69,4 @@ Vue.component('header-drawer-template', {
             document.getElementsByClassName('ripple')[0].classList.add('fadeInRipple');
         }
     }
-});
-Vue.component('login-template', {
-    template: `
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header-drawer-template></header-drawer-template>
-  <main class="mdl-layout__content">
-   <section id="login-page">
-    
-    </section>
-  </main>
-</div>
-    `,
-    data: function () {
-        return {
-            loading: false,
-            user: '',
-            pass: ''
-        }
-    },
-    
 });
