@@ -1,77 +1,57 @@
-.obfuscator{
+.card-view {
+    min-height: auto;
     width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 9;
-    background: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
+    max-width: 900px;
 }
 
-.ripple{
-    background: #f44336;
+#dashboard .mdl-layout__drawer-button {
+    color: #616161;
+}
+#dashboard .mdl-navigation .mdl-navigation__link {
+    padding: 16px 20px;
+}
+#dashboard .mdl-navigation .mdl-navigation__link i {
+    margin-right: 0.5em;
+}
+#dashboard .usuario-perfil {
+    padding: 16px;
+}
+#dashboard .usuario-foto {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 16px auto;
+    background: white;
+    border-radius: 50%;
+}
+#dashboard .usuario-foto i {
+    font-size: 75px;
+}
+#dashboard .usuario-nome {
+    font-size: 1em;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#dashboard .logout-button {
     width: 100%;
-    height: 100%;
-    border-radius: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: none;
-    color: white;
+}
+#dashboard .mdl-layout__content {
     align-items: center;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 4px;
 }
-
-.fadeInRipple{
-    animation: fadeInRipple 0.4s 0s 1 linear alternate;
-}
-
-.zoomIn{
+/*-------- Animações --------*/
+.zoomIn {
     animation: zoomIn 0.1s 0s 1 linear alternate;
 }
-@keyframes fadeInRipple {
-  0% {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    border-radius: 100% 0 0 0;
-  }
-  50% {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-  }
-  100% {
-    opacity: 1;
-    border-radius: 0;
-  }
-}
-
 @keyframes zoomIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
-
-
-
-
-.loading-clock {
-  -webkit-animation: rotate 2000ms linear infinite both;
-  animation: rotate 2000ms linear infinite both;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
