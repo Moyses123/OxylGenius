@@ -1,0 +1,13 @@
+#perfil-view{
+    max-width: 500px;
+}
+
+#perfil-view .mdl-textfield{
+    width: 100%;
+    display: block;
+}
+
+#perfil-view .mdl-card__supporting-text{
+    width: auto;
+    display: block;
+}

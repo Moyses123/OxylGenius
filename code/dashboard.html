@@ -39,7 +39,7 @@
                 <hr style="margin: 0" />
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="#" id="1" v-on:click="select($event)">
-                        <i class="mdl-color-text--grey-700 material-icons">account_circle</i> Perfil
+                        <i class="mdl-color-text--grey-700 material-icons" >account_circle</i> Perfil
                     </a>
                     <a class="mdl-navigation__link" href="#" id="2" v-on:click="select($event)">
                         <i class="mdl-color-text--grey-700 material-icons">filter_list</i> Items
@@ -55,6 +55,8 @@
             <main class="mdl-layout__content mdl-color--grey-300">
                 <!-- Conteudo -->
                 <perfil-view v-show="selected.id == 1"></perfil-view>
+                <itens-view v-show="selected.id == 2"></itens-view>
+                <usuarios-view v-show="selected.id == 3"></usuarios-view>
             </main>
         </div>
     </div>
@@ -72,8 +74,8 @@
             methods: {
                 select: function (ev) {
                     this.selected = {
-                        nome: ev.target.innerText.split(' ')[1],
-                        id: ev.target.id
+                        nome: ev.currentTarget.innerText.split(' ')[1],
+                        id: ev.currentTarget.id
                     }
                 }
             }
