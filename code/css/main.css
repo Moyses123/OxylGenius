@@ -1,12 +1,15 @@
+.active, .dot:hover {
+    background: none !important;
+}
+
+a, a:hover{
+    text-decoration: none !important;
+}
+
 .card-view {
     min-height: auto;
     width: 100%;
     max-width: 900px;
-}
-
-.mdl-layout__container{
-    min-height: 100%;
-    height: auto;
 }
 
 #dashboard .mdl-layout__drawer-button {
@@ -40,13 +43,7 @@
 #dashboard .logout-button {
     width: 100%;
 }
-#dashboard .mdl-layout__content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 16px 4px;
-    min-height: calc(100vh - 100px);
-}
+
 /*-------- Animações --------*/
 .zoomIn {
     animation: zoomIn 0.1s 0s 1 linear alternate;

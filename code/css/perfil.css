@@ -1,5 +1,7 @@
 #perfil-view{
     max-width: 500px;
+    margin: 16px auto;
+    display: block;
 }
 
 #perfil-view .mdl-textfield{

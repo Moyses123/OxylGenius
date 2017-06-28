@@ -35,11 +35,6 @@
     height: 450px;
 }
 
-.mdl-navigation .mdl-navigation__link:hover {
-    border-bottom: 4px solid #ffffff;
-}
-
-
 /* Slideshow container */
 
 .slideshow-container {
