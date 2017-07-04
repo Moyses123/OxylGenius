@@ -27,11 +27,16 @@
     height: 450px;
 }
 
+.mdl-navigation .mdl-navigation__link:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
 
 /* Slideshow container */
 
 .slideshow-container {
     max-width: 100%;
+    width: 100%;
     position: relative;
     margin: auto;
 }
@@ -125,6 +130,7 @@
 
 .android-slogan {
     font-size: 60px;
+    padding-top: 50px;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     line-height: 1;
     color: #767777;
@@ -160,7 +166,6 @@
     margin-left: 350px;
     align-content: center;
     width: 800px;
-    height: 530px;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -173,8 +178,8 @@
 
 .logo {
     margin-top: 36px;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 120px;
 }
 
 .mdl-mini-footer {
@@ -183,125 +188,6 @@
 
 .mdl-layout__content {
     height: 450px;
-}
-
-.col-md-9 {
-    margin-top: -40px;
-}
-
-.col-md-3 {
-    margin-top: 30px;
-}
-
-.container {
-    margin-bottom: 80px;
-}
-
-.mdl-mini-footer {
-    color: yellow;
-}
-
-
-/*calendário */
-
-.calendar {
-    text-align: center;
-}
-
-.calendar header {
-    position: relative;
-}
-
-.calendar h2 {
-    text-transform: uppercase;
-}
-
-.calendar thead {
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.calendar tbody {
-    color: #7c8a95;
-}
-
-.calendar tbody td:hover {
-    border: 2px solid #00addf;
-}
-
-.calendar td {
-    border: 2px solid transparent;
-    border-radius: 50%;
-    display: inline-block;
-    height: 4em;
-    line-height: 4em;
-    text-align: center;
-    width: 4em;
-}
-
-.calendar .prev-month,
-.calendar .next-month {
-    color: #cbd1d2;
-}
-
-.calendar .prev-month:hover,
-.calendar .next-month:hover {
-    border: 2px solid #cbd1d2;
-}
-
-.current-day {
-    background: #00addf;
-    color: #f9f9f9;
-}
-
-.event {
-    cursor: pointer;
-    position: relative;
-}
-
-.event:after {
-    background: #00addf;
-    border-radius: 50%;
-    bottom: .5em;
-    display: block;
-    content: '';
-    height: .5em;
-    left: 50%;
-    margin: -.25em 0 0 -.25em;
-    position: absolute;
-    width: .5em;
-}
-
-.event.current-day:after {
-    background: #f9f9f9;
-}
-
-.btn-prev,
-.btn-next {
-    border: 2px solid #cbd1d2;
-    border-radius: 50%;
-    color: #cbd1d2;
-    height: 2em;
-    font-size: .75em;
-    line-height: 2em;
-    margin: -1em;
-    position: absolute;
-    top: 50%;
-    width: 2em;
-}
-
-.btn-prev:hover,
-.btn-next:hover {
-    background: #cbd1d2;
-    color: #f9f9f9;
-}
-
-.btn-prev {
-    left: 6em;
-}
-
-.btn-next {
-    right: 6em;
 }
 
 @media (max-width: 900px) {
