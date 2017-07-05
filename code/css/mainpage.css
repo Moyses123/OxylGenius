@@ -7,7 +7,7 @@
 }
 
 .title1 {
-    font-size: 30pt;
+ margin-left: -95px;
 }
 
 .mdl-natigation {
@@ -25,102 +25,6 @@
 
 .mdl-cell {
     height: 450px;
-}
-
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-
-/* botões de prox e ant */
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-
-/* pontos */
-
-.dot {
-    cursor: pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
-/* animaçãozinha*/
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.25s;
-    animation-name: fade;
-    animation-duration: 1.25s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
 }
 
 .android-slogan {
@@ -156,21 +60,6 @@
     text-align: center;
 }
 
-.grid-body1 {
-    margin-left: 350px;
-    align-content: center;
-    width: 800px;
-    height: 530px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-.grid-body2 {
-    margin-top: -301px;
-    align-content: left;
-    width: 250px;
-}
-
 .logo {
     margin-top: 36px;
     width: 40px;
@@ -201,115 +90,27 @@
     color: yellow;
 }
 
-
-/*calendário */
-
-.calendar {
-    text-align: center;
+.text-footer{
+    color:#fff;
 }
 
-.calendar header {
-    position: relative;
-}
-
-.calendar h2 {
-    text-transform: uppercase;
-}
-
-.calendar thead {
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.calendar tbody {
-    color: #7c8a95;
-}
-
-.calendar tbody td:hover {
-    border: 2px solid #00addf;
-}
-
-.calendar td {
-    border: 2px solid transparent;
-    border-radius: 50%;
-    display: inline-block;
-    height: 4em;
-    line-height: 4em;
-    text-align: center;
-    width: 4em;
-}
-
-.calendar .prev-month,
-.calendar .next-month {
-    color: #cbd1d2;
-}
-
-.calendar .prev-month:hover,
-.calendar .next-month:hover {
-    border: 2px solid #cbd1d2;
-}
-
-.current-day {
-    background: #00addf;
-    color: #f9f9f9;
-}
-
-.event {
-    cursor: pointer;
-    position: relative;
-}
-
-.event:after {
-    background: #00addf;
-    border-radius: 50%;
-    bottom: .5em;
-    display: block;
-    content: '';
-    height: .5em;
-    left: 50%;
-    margin: -.25em 0 0 -.25em;
-    position: absolute;
-    width: .5em;
-}
-
-.event.current-day:after {
-    background: #f9f9f9;
-}
-
-.btn-prev,
-.btn-next {
-    border: 2px solid #cbd1d2;
-    border-radius: 50%;
-    color: #cbd1d2;
-    height: 2em;
-    font-size: .75em;
-    line-height: 2em;
-    margin: -1em;
-    position: absolute;
-    top: 50%;
-    width: 2em;
-}
-
-.btn-prev:hover,
-.btn-next:hover {
-    background: #cbd1d2;
-    color: #f9f9f9;
-}
-
-.btn-prev {
-    left: 6em;
-}
-
-.btn-next {
-    right: 6em;
+.mdl-mini-footer{
+    bottom: 0;
+    
 }
 
 @media (max-width: 900px) {
-    .grid-body1 {
-        display: inline;
+    
+    .text-footer{
+        margin-top: -25px;
+        font-size: 10pt;
     }
-    .grid-body2 {
-        display: none;
-        align-content: center;
+}
+
+@media (min-height: 1024px){
+    .mdl-mini-footer{
+        bottom:0;
+        position:fixed;
+        width: 100%;
     }
 }
