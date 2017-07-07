@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
+    <title>MOCS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/mainpage.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index</title>
-    <!-- Assets do projeto -->
-    <script src="vendor.min.js"></script>
-    <script src="app.min.js"></script>
+    <script src="https://vuejs.org/js/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue.resource/1.3.0/vue-resource.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="vendor.min.css">
+    <script src="vendor.min.js"></script>
+
+    <script src="app.min.js"></script>
+    <script src="j1.js"></script>
     <link rel="stylesheet" href="app.min.css">
 </head>
 
 <body>
+
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-color--white mdl-color-text--grey-700">
+        <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">MOCS</span>
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation. We hide it in small screens. -->
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link mdl-color-text--grey-700" href="">Sobre</a>
-                    <a class="mdl-navigation__link mdl-color-text--grey-700" href="">Galeria</a>
-                    <a class="mdl-navigation__link mdl-color-text--grey-700" href="">Entrar</a>
-                    <a class="mdl-navigation__link mdl-color-text--grey-700" href="">Cadastrar</a>
-                </nav>
+                <img class="title1" src="imagens/logo.png"> 
+                <div class="menu">
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <div class="elemento_menu"><a href="#" class="mdl-navigation__link">Sobre</a></div>
+                        <div class="elemento_menu"><a href="#" class="mdl-navigation__link"> Galeria</a></div>
+                        <div class="elemento_menu"><a href="#" class="mdl-navigation__link"> Entrar</a></div>
+                        <div class="elemento_menu"><a href="#" class="mdl-navigation__link"> Cadastrar</a></div>
+                    </nav>
+                </div>
             </div>
         </header>
+
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <span class="mdl-layout-title">Title</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="">Sobre</a>
                 <a class="mdl-navigation__link" href="">Galeria</a>
@@ -37,28 +50,70 @@
                 <a class="mdl-navigation__link" href="">Cadastrar</a>
             </nav>
         </div>
-        <main class="mdl-layout__content">
-            <div class="page-content">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"><img src="imagens/img1.jpg" style="width:100%"></div>
-                    <div class="item"><img src="imagens/img2.jpg" style="width:100%"></div>
-                    <div class="item"><img src="imagens/img3.jpg" style="width:100%"></div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            Menu
-                        </div>
-                        <div class="col-md-9">
-                            conteudo
+        <div class="mdl-layout__content">
+        <main>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="imagens/img1.jpg" style="width:100%"></div>
+                <div class="item"><img src="imagens/img2.jpg" style="width:100%"></div>
+                <div class="item"><img src="imagens/img3.jpg" style="width:100%"></div>
+                <div class="item"><img src="imagens/img4.jpg" style="width:100%"></div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="title-section-novs"><span>NOVIDADES</span></div>
+                        <ul>
+                            <li class="mdl-list__item">
+                                <div class="item-nov">
+                                    <span class="mdl-list__item-primary-content">
+                                12/07 - Exposição de arte
+                            </span>
+                                </div>
+                            </li>
+                            <li class="mdl-list__item">
+                                <div class="item-nov">
+                                    <span class="mdl-list__item-primary-content">
+                                15/07 - algum evento
+                            </span>
+                                </div>
+                            </li>
+                            <li class="mdl-list__item">
+                                <div class="item-nov">
+                                    <span class="mdl-list__item-primary-content">
+                                16/07 - Exposição de alguma coisa
+                            </span>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="body-section mdl-typography--text-center">
+                            <div class="logo-font android-slogan">O seu museu agora em versão digital!</div>
+                            <div class="logo-font android-sub-slogan">Confira as obras disponíveis e tenha acesso à visualização 3D</div>
+
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
+            
         </main>
+        
+        <footer class="mdl-mini-footer">
+                <div class="text-footer">Avenida Transnordestina, s/n - Novo Horizonte CEP 44036-900 - Feira de Santana - Bahia TELEFONE</div>                
+            </footer>
     </div>
+    </div>
+
+        
+
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 10,
@@ -66,6 +121,10 @@
             })
         });
     </script>
+
+
+
+
 </body>
 
 </html>
