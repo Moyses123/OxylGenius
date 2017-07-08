@@ -32,6 +32,8 @@ $app->group(['prefix' => 'obra'], function () use ($app){
 
 $app->group(['prefix' => 'login'], function () use ($app){
     $app->post('/', 'LoginController@logar'); //fazer login
+    $app->post('/facebook', 'LoginController@logarFacebook'); //fazer login
+    $app->post('/google', 'LoginController@logarGoogle'); //fazer login
     $app->post('/senha', 'LoginController@recuperarSenha'); //recuperar senha
 });
 
