@@ -7,20 +7,7 @@
 }
 
 .title1 {
- margin-left: -95px;
-}
-
-.mdl-natigation {
-    height: 100%;
-}
-
-.mdl-layout__header {
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-* {
-    box-sizing: border-box
+    margin-left: -95px;
 }
 
 .mdl-cell {
@@ -90,27 +77,25 @@
     color: yellow;
 }
 
-.text-footer{
-    color:#fff;
+.text-footer {
+    color: #fff;
 }
 
-.mdl-mini-footer{
+.mdl-mini-footer {
     bottom: 0;
-    
 }
 
 @media (max-width: 900px) {
-    
-    .text-footer{
+    .text-footer {
         margin-top: -25px;
         font-size: 10pt;
     }
 }
 
-@media (min-height: 1024px){
-    .mdl-mini-footer{
-        bottom:0;
-        position:fixed;
+@media (min-height: 1024px) {
+    .mdl-mini-footer {
+        bottom: 0;
+        position: fixed;
         width: 100%;
     }
 }
